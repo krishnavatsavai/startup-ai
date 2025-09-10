@@ -1,4 +1,3 @@
-# Deploy-Functions.ps1 - Fixed for Windows
 param(
     [Parameter(Mandatory=$true)]
     [string]$FunctionAppName,
@@ -59,4 +58,6 @@ try {
     }
 }
 catch {
-    Write-
+    Write-Host "Deployment failed: $($_.Exception.Message)" -ForegroundColor Red
+    exit 1
+}

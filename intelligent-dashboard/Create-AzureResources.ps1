@@ -72,8 +72,8 @@ function Test-Prerequisites {
     
     if ($errors.Count -gt 0) {
         Write-Host "Prerequisites missing:" -ForegroundColor Red
-        foreach ($error in $errors) {
-            Write-Host "  - $error" -ForegroundColor Red
+        foreach ($errMsg in $errors) {
+            Write-Host "  - $errMsg" -ForegroundColor Red
         }
         return $false
     }
