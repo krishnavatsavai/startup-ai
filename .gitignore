@@ -1,0 +1,55 @@
+# Secrets and keys
+*.pem
+*.key
+*_rsa
+*_dsa
+*.pub
+.env
+.env.local
+.env.production
+local.settings.json
+appsettings.*.json
+secrets/
+keys/
+certificates/
+
+# Azure Function local settings
+local.settings.json
+
+# Node modules and build artifacts
+node_modules/
+*/node_modules/
+**/node_modules/
+intelligent-dashboard/node_modules/
+azure-functions/node_modules/
+dist/
+build/
+.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# React specific
+intelligent-dashboard/build/
+intelligent-dashboard/dist/
+
+# Azure Functions specific
+azure-functions/dist/
+azure-functions/lib/

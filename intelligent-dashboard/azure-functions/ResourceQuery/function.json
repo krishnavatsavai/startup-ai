@@ -1,0 +1,15 @@
+{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "direction": "in",
+      "authLevel": "function",
+      "methods": ["get", "post"],
+      "route": "resourcequery"
+    },
+    {
+      "type": "http",
+      "direction": "out"
+    }
+  ]
+}
