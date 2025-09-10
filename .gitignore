@@ -31,7 +31,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # IDE and editor files
-.vscode/
+
 .idea/
 *.swp
 *.swo
