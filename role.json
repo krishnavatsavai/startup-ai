@@ -1,0 +1,20 @@
+{
+  "Name": "AppGateway Restart Operator (Managed Identity)",
+  "IsCustom": true,
+  "Description": "Allows a managed identity to stop and start an Azure Application Gateway without permitting configuration changes or deletion.",
+  "Actions": [
+    "Microsoft.Network/applicationGateways/start/action",
+    "Microsoft.Network/applicationGateways/stop/action",
+    "Microsoft.Network/applicationGateways/read",
+    "Microsoft.Resources/subscriptions/resourceGroups/read"
+  ],
+  "NotActions": [
+    "Microsoft.Network/applicationGateways/delete",
+    "Microsoft.Network/applicationGateways/write",
+    "Microsoft.Network/applicationGateways/*/write",
+    "Microsoft.Authorization/*/write"
+  ],
+  "AssignableScopes": [
+    "/subscriptions/<your-subscription-id>"
+  ]
+}
